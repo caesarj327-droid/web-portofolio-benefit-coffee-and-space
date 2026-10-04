@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENEFIT — Coffee & Space | Premium Concept</title>
+    <meta name="description" content="Benefit Coffee & Space — coffee, food, garden ambience, and good moments in Bandar Lampung.">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--ink:#172018;--cream:#f5f0e6;--paper:#fffdf8;--muted:#687066;--line:#ddd8cc;--accent:#8a6a45;--dark:#182019}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f3f0e8;color:var(--ink);font-family:"DM Sans",sans-serif}
+a{text-decoration:none;color:inherit}.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px 6%;background:rgba(255,253,248,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(221,216,204,.6)}
+.logo{font-weight:700;letter-spacing:.08em;font-size:14px}.navlinks{display:flex;gap:28px;font-size:13px}.navlinks a:hover{opacity:.6}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:999px;background:var(--ink);color:white;font-size:13px;font-weight:600;transition:.25s}.btn:hover{transform:translateY(-2px)}
+.btn.light{background:#fff;color:var(--ink)}.btn.outline{background:transparent;border:1px solid rgba(255,255,255,.45)}
+.hero{min-height:100vh;display:grid;place-items:end start;position:relative;overflow:hidden;background:linear-gradient(120deg,#18231b,#7b705b)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,16,11,.74),rgba(10,16,11,.12)),url("https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero-content{position:relative;z-index:1;color:#fff;padding:160px 6% 85px;max-width:850px}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.75;margin-bottom:18px}
+h1,h2{font-family:"Playfair Display",serif;margin:0}h1{font-size:clamp(62px,9vw,128px);line-height:.9;font-weight:600;letter-spacing:-.04em}.hero p{font-size:18px;line-height:1.6;max-width:580px;color:rgba(255,255,255,.82);margin:28px 0}.actions{display:flex;gap:10px;flex-wrap:wrap}
+section{padding:100px 6%}.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:16px}
+h2{font-size:clamp(38px,5vw,66px);line-height:1.03}.lead{font-size:17px;line-height:1.8;color:var(--muted)}.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.stat{background:var(--paper);padding:28px}.stat b{font-family:"Playfair Display";font-size:31px}.stat span{display:block;color:var(--muted);font-size:13px;margin-top:6px}
+.dark{background:var(--dark);color:white}.dark .lead{color:#b9c0b8}.dark .kicker{color:#d1b184}
+.gallery{display:grid;grid-template-columns:1.25fr .75fr;gap:14px;margin-top:45px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:22px;display:block;min-height:250px}.gallery .stack{display:grid;grid-template-rows:1fr 1fr;gap:14px}
+.menuhead{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:35px}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{border:1px solid var(--line);border-radius:20px;padding:25px;background:#fff}.card .tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}.card h3{font-family:"Playfair Display";font-size:27px;margin:12px 0 8px}.card p{font-size:13px;color:var(--muted);line-height:1.6;margin:0}.price{margin-top:22px;font-weight:700}
+.quote{background:var(--cream);text-align:center}.quote blockquote{font-family:"Playfair Display";font-size:clamp(30px,4vw,54px);line-height:1.2;max-width:900px;margin:0 auto 22px}.quote small{color:var(--muted)}
+.location{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:stretch}.info{display:grid;gap:14px}.info-item{padding:22px 0;border-bottom:1px solid var(--line)}.info-item b{display:block;margin-bottom:7px}.info-item span{color:var(--muted);font-size:14px;line-height:1.6}.map{min-height:390px;border-radius:24px;overflow:hidden;background:#ddd}.map iframe{width:100%;height:100%;border:0}
+footer{padding:35px 6%;display:flex;justify-content:space-between;gap:20px;background:#101610;color:#c6ccc5;font-size:12px}.mobile{display:none}
+@media(max-width:800px){.navlinks{display:none}.mobile{display:inline}.intro,.location{grid-template-columns:1fr;gap:40px}.gallery{grid-template-columns:1fr}.gallery .stack{grid-template-rows:250px 250px}.menu-grid{grid-template-columns:1fr}.menuhead{display:block}.menuhead .btn{margin-top:20px}.hero-content{padding-bottom:55px}section{padding:75px 6%}.statgrid{margin-top:10px}}
+    </style>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="#home">BENEFIT COFFEE & SPACE</a>
+  <div class="navlinks"><a href="#about">About</a><a href="#menu">Menu</a><a href="#space">Space</a><a href="#visit">Visit</a></div>
+  <a class="btn mobile" href="https://wa.me/6281366818619" target="_blank">WhatsApp</a>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">COFFEE · GARDEN · SPACE · BANDAR LAMPUNG</div>
+    <h1>A slower<br>way to<br>coffee.</h1>
+    <p>A garden coffee space in Bandar Lampung — made for slow mornings, long conversations, focused afternoons, and warm nights.</p>
+    <div class="actions"><a class="btn light" href="#menu">Explore Menu</a><a class="btn outline" href="#visit">Find Us</a></div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="intro">
+    <div>
+      <div class="kicker">A little about us</div>
+      <h2>More than just<br>a coffee shop.</h2>
+    </div>
+    <div>
+      <p class="lead">Benefit Coffee & Space menghadirkan ruang yang terasa lebih tenang di tengah Bandar Lampung. Konsep garden cafe, area outdoor, sentuhan Jepang, dan pencahayaan hangat menjadi bagian dari pengalaman Benefit.</p>
+      <p class="lead">Mau ngopi, makan, ngobrol, atau main board game? Take your time.</p>
+    </div>
+  </div>
+  <div class="statgrid" style="margin-top:65px">
+    <div class="stat"><b>Indoor + Outdoor</b><span>Pilih spot yang paling nyaman buat kamu.</span></div>
+    <div class="stat"><b>Garden Ambience</b><span>Suasana hijau yang terasa lebih santai.</span></div>
+    <div class="stat"><b>Coffee & Food</b><span>Dari kopi dan non-coffee sampai makanan berat.</span></div>
+    <div class="stat"><b>Good for Groups</b><span>Tempat untuk ngobrol dan menghabiskan waktu.</span></div>
+  </div>
+</section>
+
+<section class="dark" id="space">
+  <div class="kicker">INSIDE BENEFIT</div>
+  <h2>Space made<br>to stay.</h2>
+  <div class="gallery">
+    <img src="https://i.pinimg.com/736x/a2/7f/ef/a27fef1375424682b094ebd5c16ef452.jpg" alt="Cafe garden ambience">
+    <div class="stack">
+      <img src="https://i.pinimg.com/736x/56/7a/16/567a1653257a3ae3deb42ab1175ef0a7.jpg" alt="Coffee shop interior">
+      <img src="https://i.pinimg.com/736x/f9/1c/98/f91c98ee4a5534a9551a2376d5c2f102.jpg" alt="Coffee and table">
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="menuhead">
+    <div><div class="kicker">WHAT TO ORDER</div><h2>Good things<br>on the table.</h2></div>
+    <a class="btn" href="https://wa.me/6281366818619?text=Halo%20Benefit%20Coffee%20%26%20Space%2C%20saya%20ingin%20menanyakan%20menu." target="_blank">Ask about menu</a>
+  </div>
+  <div class="menu-grid" id="menu-grid">
+    <!-- Menu akan otomatis dimuat dari Google Sheets -->
+    <p>Memuat menu...</p>
+  </div>
+</section>
+
+<section class="quote">
+  <blockquote>“A cozy place to slow down, sip something good, and enjoy the moment.”</blockquote>
+  <small>Benefit Coffee & Space · Bandar Lampung</small>
+</section>
+
+<section id="visit">
+  <div class="location">
+    <div>
+      <div class="kicker">Visit us</div><h2>See you at Benefit.</h2>
+      <div class="info" style="margin-top:30px">
+        <div class="info-item"><b>Location</b><span>Jl. Pagar Alam (Gang PU), Segala Mider, Kec. Tanjung Karang Barat, Bandar Lampung, Lampung.</span></div>
+        <div class="info-item"><b>Opening hours</b><span>Senin–Jumat: 09.00–23.00<br>Sabtu–Minggu: 09.00–00.00</span></div>
+        <div class="info-item"><b>Contact</b><span>0813-6681-8619</span></div>
+      </div>
+      <div class="actions" style="margin-top:28px"><a class="btn" href="https://wa.me/6281366818619" target="_blank">WhatsApp</a><a class="btn" style="background:var(--cream);color:var(--ink)" href="https://www.google.com/maps/search/?api=1&query=Benefit+Coffee+%26+Space+Bandar+Lampung" target="_blank">Open Maps</a></div>
+    </div>
+    <div class="map"><iframe src="https://www.google.com/maps?q=Benefit%20Coffee%20%26%20Space%2C%20Bandar%20Lampung&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+
+<footer><span>© 2026 BENEFIT COFFEE & SPACE</span><span>Made for good coffee & good company.</span></footer>
+
+<script>
+  // ID Spreadsheet Anda (diambil dari URL Google Sheets)
+  const SHEET_ID = "1oqRphU-SJbt3QjGRgiwX1aM54JvX-n9NpafQZjsfU7E"; 
+  
+  // URL ekspor CSV otomatis bawaan Google Sheets
+  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv`;
+  
+  // Parser CSV untuk mengurai data per kolom
+  function parseCSV(text) {
+    const lines = text.split('\n').filter(line => line.trim() !== '');
+    const result = [];
+    
+    // Mulai dari baris ke-2 (indeks 1) untuk melewati nama baris header
+    for (let i = 1; i < lines.length; i++) {
+      const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g) || lines[i].split(',');
+      const cleanRow = row.map(val => val ? val.replace(/^"|"$/g, '').trim() : '');
+      
+      if (cleanRow[1]) { // Memastikan 'nama produk' adaisinya
+        result.push({
+          tag: cleanRow[0] || '',         // Kolom A: jenis menu
+          name: cleanRow[1] || '',        // Kolom B: nama produk
+          description: cleanRow[2] || '', // Kolom C: keterangan
+          price: cleanRow[3] || ''        // Kolom D: harga
+        });
+      }
+    }
+    return result;
+  }
+
+  function renderMenu(items) {
+    const grid = document.getElementById('menu-grid');
+    if (!grid) return;
+    grid.innerHTML = '';
+    
+    items.forEach(item => {
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="tag">${item.tag}</div>
+        <h3>${item.name}</h3>
+        <p>${item.description}</p>
+        <div class="price">${item.price}</div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  async function fetchMenuFromSheets() {
+    try {
+      const response = await fetch(CSV_URL);
+      const csvText = await response.text();
+      const menuData = parseCSV(csvText);
+      renderMenu(menuData);
+    } catch (err) {
+      console.error("Gagal mengambil data dari Google Sheets:", err);
+    }
+  }
+
+  fetchMenuFromSheets();
+</script>
+</body>
+</html>
